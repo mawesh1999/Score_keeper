@@ -1,0 +1,106 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------------------------main container------------------------- */
+#main{
+    background-color: yellowgreen;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50vh;
+    border:1px solid black;
+    padding: 10px 10px 10px 10px;
+}
+
+/* --------------------------------img--------------------------------------- */
+img{
+    width:100%;
+    height:100px;
+}
+
+/* -------------------------------------heading---------------------------- */
+#heading{
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width:100%;
+    text-align: center;
+}
+
+#log{
+    text-align: left;
+    width: 100%;
+}
+
+/* ------------------------Scoreboard--------------------------------- */
+#scoreboard{
+    display:flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+.score_style{
+    height:2rem;
+    width:2rem;
+    background-color: rgb(134, 187, 194);
+    text-align: center;
+    font-size:x-large;
+    font-weight:bolder;
+}
+/* ------------------------------dropdown------------------------- */
+#round{
+    display:flex;
+    flex-direction: row;
+    gap: 2ex;;
+    /* height:2rem; */
+    justify-content:first baseline;
+    align-items: flex-start;
+    margin:0;
+    width: 100%;
+}
+
+#round p{
+    margin-top: 0;
+}
+#drop{
+    width:50%;
+    height:fit-content;
+    text-align: center;
+}
+
+
+
+/* ---------------------------buttons--------------------------- */
+#player1{
+    flex-grow: 1;
+    background-color: rgb(100, 202, 100);
+}
+#player2{
+    flex-grow: 1;
+    background-color: rgb(81, 184, 218);
+}
+#reset{
+    flex-grow: 1;
+    background-color: rgb(205, 116, 116);
+}
+
+#player1:active,#player2:active,#reset:active{
+    background-color: white;
+}
+.button{
+    border-radius: 1px;
+    font-size: medium;
+    border: 1px solid white;
+}
+
+#button_container{
+    display:flex;
+    flex-direction: row;
+    gap: 1px;
+    /* border: 1px solid black; */
+    width: 100%;
+}
